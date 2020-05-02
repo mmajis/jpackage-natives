@@ -23,7 +23,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew jpackageImage
     - name: Test if native executable runs
-      run: ls -lR
+      run: build/jpackage/jpackage-natives/bin/jpackage-natives
 
   build-macos:
     runs-on: macos-latest
