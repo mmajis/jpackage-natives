@@ -49,4 +49,8 @@ jobs:
         with:
           java-version: 14
       - name: Build with Gradle
-        run: gradlew.bat build
+        shell: cmd
+        run: gradlew.bat jpackageImage
+      - name: Test if native executable runs
+        shell: cmd
+        run: dir /S
