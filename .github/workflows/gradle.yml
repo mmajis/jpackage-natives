@@ -45,4 +45,4 @@ jobs:
         with:
           java-version: 14
       - name: Build with Gradle
-        run: gradlew.bat jpackageImage
+        run: gradlew.bat build
