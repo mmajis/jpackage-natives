@@ -40,6 +40,5 @@ jlink {
         } else {
             //installerType = "deb"
         }
-        installerOptions.add("--verbose")
     }
 }
