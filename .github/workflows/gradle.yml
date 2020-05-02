@@ -22,6 +22,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew jpackageImage
+    - name: Test if native executable runs
+      run: ls -lR
 
   build-macos:
     runs-on: macos-latest
@@ -35,6 +37,8 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew jpackageImage
+      - name: Test if native executable runs
+        run: build/jpackage/jpackage-natives.app/Contents/MacOS/jpackage-natives
 
   build-windows:
     runs-on: windows-latest
