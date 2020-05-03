@@ -1,6 +1,6 @@
 # Native Executables with Java jpackage tool
 
-This is a test to see how `jpackage` native executables work out with Github Actions.
+This is a test and example to see how `jpackage` native executables work out with Github Actions.
 
 The app is a simple hello world built with Gradle and packaged with the [The Badass JLink Plugin](https://badass-jlink-plugin.beryx.org/releases/latest/) which essentially runs `jpackage`.
 
